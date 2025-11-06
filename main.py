@@ -7,6 +7,7 @@ import torch
 import cv2
 import supervision as sv
 from dotenv import load_dotenv
+import os
 
 from transformers import AutoImageProcessor, DetrForObjectDetection
 from ultralytics import YOLO
@@ -52,7 +53,7 @@ class ObjectDetection:
         # Initialize OCR client
         print("Loading OCR client...")
         load_dotenv()
-        mistral_api_key = os.getenv('MISTRAL_API_KEY', 'AktYRoHZzic9lLSsO6OQCYvzkoo5Lp7a')
+        mistral_api_key = os.getenv('MISTRAL_API_KEY')
         self.ocr_client = Mistral(api_key=mistral_api_key)
         
         print("✓ All models loaded successfully\n")

@@ -1,1 +1,9 @@
 ".env" 
+
+# Model weights and large files
+*.pt
+
+# OS and IDE files
+.DS_Store
+.vscode/
+.idea/
