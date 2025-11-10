@@ -7,3 +7,8 @@
 .DS_Store
 .vscode/
 .idea/
+
+topic_config.json
+temp_*/
+__pycache__/
+index_store/

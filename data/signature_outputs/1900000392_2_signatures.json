@@ -1,0 +1,32 @@
+{
+  "pdf": "data\\1900000392_1\\1900000392_2.pdf",
+  "pages": [
+    {
+      "page": 1,
+      "signatures": [
+        {
+          "id": 1,
+          "bbox": [
+            453,
+            546,
+            532,
+            624
+          ],
+          "confidence": 0.46255096793174744,
+          "crop": "data\\signature_outputs\\1900000392_2_page1_sig1.png"
+        },
+        {
+          "id": 2,
+          "bbox": [
+            18,
+            27,
+            320,
+            344
+          ],
+          "confidence": 0.09666623175144196,
+          "crop": "data\\signature_outputs\\1900000392_2_page1_sig2.png"
+        }
+      ]
+    }
+  ]
+}

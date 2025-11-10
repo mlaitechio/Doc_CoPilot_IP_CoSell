@@ -1,0 +1,22 @@
+{
+  "pages": [
+    {
+      "index": 0,
+      "images": [],
+      "markdown": "# CHECKMATE INDUSTRIAL GUARDS (P) LTD.\n\nHMEL TOWNSHIP REFINARY ROAD, RAMAN MANDI, BHATINDA-1204354885, State Code :03 Telephone: 151001, FaxNo: 0120-4354887, Email: PUNJAB@CHECKMATEGUARDS.COM\n\nTax Invoice\n\n|  To |  |  |   |\n| --- | --- | --- | --- |\n|  HPCL MITTAL ENERGY LTD. |  | Invoice No.: PB/03/20-21/10 |   |\n|  VILLAGE PHULLOKHARI, TALUKA TALWANDI |  | Invoice Date: 01-05-2020 |   |\n|  SABO,BATHINDA, PUNJAB |  | Work Order No.: 9830001666 |   |\n|  STATE CODE & NAME: 03,BATHINDA, PUNJAB |  | Work Order Date: 01-04-2017 |   |\n|  GSTIN No: 03AABCG5231F1Z8 |  |  |   |\n|  Unit Code: 874 |  | Invoice for the Month of April 2020 |   |\n\n|  PARTICULARS | SAC-HSN Code | PERSON/QTY. | DUTIES | RATE | AMOUNT  |\n| --- | --- | --- | --- | --- | --- |\n|  1. BEAS GUEST HOUSE |  | 996331 |  |  | 1468.00  |\n|  2. EVEREST G.H. |  | 998529 |  |  | 12596.00  |\n|  3. VILLA NO. 600+601 |  | 996331 |  |  | 4647.00  |\n|  4. REIMBURSEMENT OF EXPENSES |  | 996331 |  |  | 2030.00  |\n\n|   |  | Total |  |  | 20741.00  |\n| --- | --- | --- | --- | --- | --- |\n|  ReverseCharge | No |  |  |  |   |\n|  CIN No: | U74920DL1996PTC081953 |  | Sub Total |  | 20741.00  |\n|  PAN No: | AAACC4804B |  | CGST | 2.50% | 519.00  |\n|  GSTIN No: | 03AAACC4804B1ZK |  | SGST | 2.50% | 519.00  |\n|  MSMED Reg. No: | UP28E0001122 |  |  |  |   |\n|  Udyog AdharNo: | 828516632571 |  |  |  |   |\n|  Service Category: | Security Agency/Supply Man Power |  |  |  |   |\n\nTWENTY ONE THOUSAND SEVEN HUNDRED SEVENTY NINE ONLY\n\nGrand Total: 21779.00\n\nE & O.E\n\nBANK NAME: KOTAK MAHINDRA BANK\n\nACC.NO: 9711693495\n\nIFSC CODE: KKBK0000181\n\nBIRANCH: PLOT NO.4 & 5, BLOCK F, SECTOR 18, NOIDA 201301\n\nBILL DELIVERED BY\n\nTerms & Conditions\n\n1. All Payment must be Paid by A/C Payee Cheque/NEFT/RTGS in favour of Checkmate Industrial Guards Pvt. Ltd.\n2. Interest @ 24% p.a. will be charged if payment not made within seven days of presentation of Bill.\n3. All Juradictions Will be Concern Branch Only.\n4. If the GST is indicated in invoice separatly. so please do not deduct TDS on GST component in this invoice.\n5. .",
+      "dimensions": {
+        "dpi": 200,
+        "height": 2200,
+        "width": 1700
+      }
+    }
+  ],
+  "model": "mistral-document-ai-2505",
+  "document_annotation": null,
+  "usage_info": {
+    "pages_processed": 1,
+    "doc_size_bytes": 993902,
+    "pages_processed_annotation": 0
+  },
+  "content_filter_results": null
+}

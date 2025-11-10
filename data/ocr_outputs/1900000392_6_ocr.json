@@ -1,0 +1,22 @@
+{
+  "pages": [
+    {
+      "index": 0,
+      "images": [],
+      "markdown": "# ORIGINAL FOR RECIPIENT\n\nGSTIN: 03ABB2917414C178 PAN: A0829E2718C\n\nBUSINESS REG#: 1171/77, State: 1041, Mashand (Bathinda) TAX INVOICE\n\nName & Address of the Recipient M/s HELL, 60154 Energy Limited Ph: 001-44411-11-11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111",
+      "dimensions": {
+        "dpi": 200,
+        "height": 2200,
+        "width": 1700
+      }
+    }
+  ],
+  "model": "mistral-document-ai-2505",
+  "document_annotation": null,
+  "usage_info": {
+    "pages_processed": 1,
+    "doc_size_bytes": 737374,
+    "pages_processed_annotation": 0
+  },
+  "content_filter_results": null
+}

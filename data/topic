@@ -1,0 +1,245 @@
+{
+  "Company Overview": {
+    "questions": [
+      "What is the company’s name and primary line of business?",
+      "What are the company’s main products or services?",
+      "In which markets or regions does the company operate?",
+      "What are the company’s subsidiaries or business segments?"
+    ],
+    "retrieval_prompts": [
+      "About the company",
+      "Company profile or background",
+      "Business overview",
+      "Nature of operations or core business activities",
+      "Overview of products or services",
+      "Corporate structure or subsidiaries"
+    ]
+  },
+
+  "Financial Highlights": {
+    "questions": [
+      "What are the key financial highlights for the reporting period?",
+      "What is the percentage growth or decline in key metrics like revenue and net profit?",
+      "What are the major financial achievements or setbacks compared to the previous year?"
+    ],
+    "retrieval_prompts": [
+      "Financial highlights",
+      "Financial summary",
+      "Performance overview",
+      "Key financial indicators",
+      "Annual or quarterly highlights",
+      "Summary of results"
+    ]
+  },
+
+  "Revenue": {
+    "questions": [
+      "What is the company’s total revenue during the reporting period?",
+      "How does the revenue growth rate compare to the previous period?",
+      "What are the major sources of revenue?"
+    ],
+    "retrieval_prompts": [
+      "Revenue",
+      "Total income",
+      "Sales or turnover",
+      "Top-line growth",
+      "Revenue breakdown",
+      "Income statement revenue section"
+    ]
+  },
+
+  "Expenses": {
+    "questions": [
+      "What are the company’s total expenses for the reporting period?",
+      "What is the amount of Cost of Goods Sold (COGS)?",
+      "What are the operating expenses (OPEX)?",
+      "What is the depreciation and amortization expense?",
+      "What is the interest expense?"
+    ],
+    "retrieval_prompts": [
+      "Expenses",
+      "Operating costs",
+      "Administrative expenses",
+      "COGS or cost of sales",
+      "Depreciation and amortization",
+      "Interest or finance costs"
+    ]
+  },
+
+  "Profitability": {
+    "questions": [
+      "What is the company’s gross profit and gross profit margin?",
+      "What is the EBITDA for the period?",
+      "What is the EBIT (Operating Profit)?",
+      "What is the profit before tax (PBT)?",
+      "What is the net profit or profit after tax (PAT)?",
+      "What is the net profit margin percentage?"
+    ],
+    "retrieval_prompts": [
+      "Profitability",
+      "Income statement bottom line",
+      "EBITDA or EBIT",
+      "Net profit or PAT",
+      "Earnings summary",
+      "Profit margin"
+    ]
+  },
+
+  "Balance Sheet": {
+    "questions": [
+      "What is the company’s total assets?",
+      "What are the current assets and non-current assets?",
+      "What are the total liabilities?",
+      "What are the current liabilities and non-current liabilities?",
+      "What is the shareholders’ equity or net worth?",
+      "What is the working capital?"
+    ],
+    "retrieval_prompts": [
+      "Balance sheet",
+      "Assets and liabilities",
+      "Net worth or equity",
+      "Financial position",
+      "Working capital details",
+      "Statement of financial position"
+    ]
+  },
+
+  "Cash Flow": {
+    "questions": [
+      "What is the cash flow from operating activities (CFO)?",
+      "What is the cash flow from investing activities (CFI)?",
+      "What is the cash flow from financing activities (CFF)?",
+      "What is the free cash flow (FCF)?"
+    ],
+    "retrieval_prompts": [
+      "Cash flow statement",
+      "Operating cash flow",
+      "Investing and financing cash flow",
+      "Free cash flow",
+      "Net cash generated",
+      "Cash inflows and outflows"
+    ]
+  },
+
+  "Key Financial Ratios": {
+    "questions": [
+      "What is the current ratio?",
+      "What is the quick ratio?",
+      "What is the debt-to-equity ratio?",
+      "What is the interest coverage ratio?",
+      "What is the return on equity (ROE)?",
+      "What is the return on assets (ROA)?",
+      "What is the return on investment (ROI)?",
+      "What is the asset turnover ratio?"
+    ],
+    "retrieval_prompts": [
+      "Financial ratios",
+      "Liquidity ratios",
+      "Profitability ratios",
+      "Leverage ratios",
+      "Efficiency ratios",
+      "Key performance indicators",
+      "KPI analysis"
+    ]
+  },
+
+  "Shareholder Information": {
+    "questions": [
+      "What is the earnings per share (EPS)?",
+      "What is the dividend per share?",
+      "What is the dividend payout ratio?",
+      "What is the book value per share?",
+      "What is the market capitalization?"
+    ],
+    "retrieval_prompts": [
+      "Shareholder information",
+      "Earnings per share (EPS)",
+      "Dividend details",
+      "Equity and share capital",
+      "Book value",
+      "Market value or capitalization"
+    ]
+  },
+
+  "Management Discussion & Analysis": {
+    "questions": [
+      "What are the management’s key comments on performance?",
+      "What risks and opportunities have been identified by management?",
+      "What is the future outlook or growth strategy discussed by management?"
+    ],
+    "retrieval_prompts": [
+      "Management discussion",
+      "MD&A",
+      "Performance commentary",
+      "Risk and outlook",
+      "Management analysis",
+      "Business strategy and outlook"
+    ]
+  },
+
+  "Auditor’s Report": {
+    "questions": [
+      "What is the auditor’s opinion on the financial statements?",
+      "Are there any qualifications or adverse remarks mentioned?",
+      "Does the auditor confirm compliance with accounting standards?"
+    ],
+    "retrieval_prompts": [
+      "Auditor’s report",
+      "Independent auditor’s opinion",
+      "Audit observations",
+      "Compliance with accounting standards",
+      "Audit report summary"
+    ]
+  },
+
+  "Notes to Financial Statements": {
+    "questions": [
+      "What accounting policies have been followed?",
+      "What are the details of contingent liabilities?",
+      "What related party transactions are mentioned?",
+      "What commitments or pending obligations are reported?"
+    ],
+    "retrieval_prompts": [
+      "Notes to accounts",
+      "Explanatory notes",
+      "Accounting policies",
+      "Contingent liabilities and commitments",
+      "Related party disclosures",
+      "Supplementary notes"
+    ]
+  },
+
+  "Corporate Governance": {
+    "questions": [
+      "What are the corporate governance practices followed by the company?",
+      "Who are the members of the Board of Directors?",
+      "What are the company’s CSR initiatives?",
+      "What risk management practices are mentioned?"
+    ],
+    "retrieval_prompts": [
+      "Corporate governance report",
+      "Board of directors",
+      "CSR activities",
+      "Governance framework",
+      "Risk management policies",
+      "Leadership and ethics"
+    ]
+  },
+
+  "Significant Events / Future Outlook": {
+    "questions": [
+      "What major events or announcements occurred during the reporting period?",
+      "What new investments, acquisitions, or divestitures are reported?",
+      "What is the company’s future business plan or growth forecast?",
+      "What macroeconomic or regulatory factors may affect the company?"
+    ],
+    "retrieval_prompts": [
+      "Significant developments",
+      "Future outlook",
+      "Strategic initiatives",
+      "Major events or acquisitions",
+      "Forward-looking statements",
+      "Business plan or projections"
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "pdf": "data\\LAP_Sample on SEP28.pdf",
+  "pages": [
+    {
+      "page": 1,
+      "detections": [
+        {
+          "id": 1,
+          "confidence": 0.8414341807365417,
+          "box": [
+            459,
+            259,
+            586,
+            408
+          ],
+          "crop": "data\\photo_outputs\\LAP_Sample on SEP28_page1_photo1.png"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "detections": []
+    },
+    {
+      "page": 3,
+      "detections": []
+    },
+    {
+      "page": 4,
+      "detections": []
+    },
+    {
+      "page": 5,
+      "detections": [
+        {
+          "id": 1,
+          "confidence": 0.8146492838859558,
+          "box": [
+            448,
+            306,
+            566,
+            443
+          ],
+          "crop": "data\\photo_outputs\\LAP_Sample on SEP28_page5_photo1.png"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "detections": []
+    }
+  ]
+}

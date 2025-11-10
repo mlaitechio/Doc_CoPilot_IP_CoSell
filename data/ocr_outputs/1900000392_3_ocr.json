@@ -1,0 +1,22 @@
+{
+  "pages": [
+    {
+      "index": 0,
+      "images": [],
+      "markdown": "GSTIN- 03ABKPR2414C1Z6\nPAN - ABKPR2414C\n\nBUSICON\nRegd.Office:1171/72,Ahata Niaj Mohamd (Bathinda)\nTAX INVOICE\nName & Address of the Recipient\nM/s HPCL- Mittal Energy Limited\nPhullokhari Village,\nBathinda 151301,\nPunjab(India)\nGSTIN - 03AABCG5231F1Z8\n\nRECEIVED\n20 MAY 2023\nService Department, Bathinda\nServices Accounting Code - 9963\nPlace of Service State & Code - Punjab(03)\n\nMC/738\nDATE:\n14/05/2020\nORDER NO.\n9830001570\nORDER DATE:\n01.04.2019\nDESCRIPTION OF SERVICES\n(SERVICE PROVIDE TO WIPRO)\nUOM\nQTY\nRATE\nAMOUNT\nBreakfast\nEACH\n0\n17\n0\nMeals Veg\nEACH\n10\n34\n340\nMeals non-Veg (on Tuesday)\nEACH\n0\n38\n0\nPeriod: 01 To 07 MAY-2020\nTotal Value of Services\n340\nState Goods and Service Tax @ 2.5%\n8.50\nCentral Goods and Service Tax@ 2.5%\n8.50\nIntegrated Goods and Service Tax@ 0%\n0%\nNet Amount\n357\nAmount in Words: Three Hundred Fifty Seven Only\n\nE & O.E\nSubject to Bathinda Jurisdication\n\nE&O.ED\n2015/12/20\nFY 15/15/2019\nSubject to Bathinda Jurisdication\nBUSICON\nAuthorised Signature\n2015/12/20",
+      "dimensions": {
+        "dpi": 200,
+        "height": 2200,
+        "width": 1700
+      }
+    }
+  ],
+  "model": "mistral-document-ai-2505",
+  "document_annotation": null,
+  "usage_info": {
+    "pages_processed": 1,
+    "doc_size_bytes": 958431,
+    "pages_processed_annotation": 0
+  },
+  "content_filter_results": null
+}

@@ -1,0 +1,29 @@
+{
+  "pdf": "data\\LAP_Sample on SEP28.pdf",
+  "pages": [
+    {
+      "page": 1,
+      "detections": []
+    },
+    {
+      "page": 2,
+      "detections": []
+    },
+    {
+      "page": 3,
+      "detections": []
+    },
+    {
+      "page": 4,
+      "detections": []
+    },
+    {
+      "page": 5,
+      "detections": []
+    },
+    {
+      "page": 6,
+      "detections": []
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "pages": [
+    {
+      "index": 0,
+      "images": [],
+      "markdown": "GSTIN- 03ABKPR2414C1Z6 PAN - ABKPR2414C\n\nBUSICON Regd.Office:1171/72,Ahata Niaj Mohamd (Bathinda) TAX INVOICE\n\nName & Address of the Recipient M/s HPCL- Mittal Energy Limited Phullokhari Village, Bathinda 151301, Punjab(India) GSTIN - 03AABCG5231F1Z8\n\nINVOICE NO. MC/727 DATE: 02/05/2020 ORDER NO. A100051311 ORDER DATE: 01.04.2019\n\n|  DESCRIPTION OF SERVICES | UOM | QTY | RATE | AMOUNT  |\n| --- | --- | --- | --- | --- |\n|  MEAL BOXES PROVIDE IN PET.CHEM PROJECT |  |  |  |   |\n|  LUNCH + DINNER BOXES PROVIDED |  |  |  |   |\n|  IN OSBL AREA FROM 21 ARPIL TO 30 APRIL 2020 | EACH | 2173 | 1 | 2173  |\n|  Period : 21 To 30 APRIL-2020 |  |  |  |   |\n|   |  |  | Total Value of Services | 2173  |\n|   | State Goods and Service Tax @ 2.5% |  |  | 54.33  |\n|   | Central Goods and Service Tax@ 2.5% |  |  | 54.33  |\n|   | Integrated Goods and Service Tax@ 0% |  |  | 0  |\n|   | Net Amount |  |  | 2,282  |\n\nAmount in Words : Two Thousand Two Hundred Eighty Two Only\n\nE & O.E Subject to Bathinda Jurisdication\n\nEoc Simplife Name Abbarised Signatory BATN",
+      "dimensions": {
+        "dpi": 200,
+        "height": 2200,
+        "width": 1700
+      }
+    }
+  ],
+  "model": "mistral-document-ai-2505",
+  "document_annotation": null,
+  "usage_info": {
+    "pages_processed": 1,
+    "doc_size_bytes": 1015477,
+    "pages_processed_annotation": 0
+  },
+  "content_filter_results": null
+}

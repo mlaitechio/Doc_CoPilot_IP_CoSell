@@ -18,3 +18,7 @@ langchain
 langchain-community 
 langchain-core
 sentence-transformers
+azure-ai-inference
+pypdf
+openai
+langchain

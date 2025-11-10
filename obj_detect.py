@@ -2,7 +2,9 @@ import os
 import json
 import base64
 from pathlib import Path
+import time
 from PIL import Image, ImageDraw
+import requests
 import torch
 import cv2
 import supervision as sv
@@ -11,8 +13,8 @@ import os
 
 from transformers import AutoImageProcessor, DetrForObjectDetection
 from ultralytics import YOLO
-from mistralai import Mistral
-from mistralai.extra import response_format_from_pydantic_model
+# from mistralai import Mistral
+# from mistralai.extra import response_format_from_pydantic_model
 from pydantic import BaseModel, Field
 
 try:
@@ -22,17 +24,17 @@ except ImportError:
 
 
 # Pydantic model for OCR extraction
-class Document(BaseModel):
-    Name: str = Field(..., description="Name of the person mentioned in the document")
-    DoB: str = Field(..., description="Date of birth of the person")
-    Gender: str = Field(..., description="Applicant's gender")
-    Marital_Status: str = Field(..., description="Applicant's marital status")
-    Address: str = Field(..., description="Address of the person")
-    Aadhar_Number: str = Field(..., description="Aadhar number")
-    PAN_Number: str = Field(..., description="PAN number")
-    Bank_Account: str = Field(..., description="Applicant's bank account number")
-    GSTIN_Number: str = Field(..., description="GSTIN number mentioned in the document")
-    type_of_document: str = Field(..., description="Type of KYC document")
+# class Document(BaseModel):
+#     Name: str = Field(..., description="Name of the person mentioned in the document")
+#     DoB: str = Field(..., description="Date of birth of the person")
+#     Gender: str = Field(..., description="Applicant's gender")
+#     Marital_Status: str = Field(..., description="Applicant's marital status")
+#     Address: str = Field(..., description="Address of the person")
+#     Aadhar_Number: str = Field(..., description="Aadhar number")
+#     PAN_Number: str = Field(..., description="PAN number")
+#     Bank_Account: str = Field(..., description="Applicant's bank account number")
+#     GSTIN_Number: str = Field(..., description="GSTIN number mentioned in the document")
+#     type_of_document: str = Field(..., description="Type of KYC document")
 
 
 class ObjectDetection:
@@ -52,10 +54,9 @@ class ObjectDetection:
         
         # Initialize OCR client
         print("Loading OCR client...")
-        load_dotenv()
-        mistral_api_key = os.getenv('MISTRAL_API_KEY')
-        self.ocr_client = Mistral(api_key=mistral_api_key)
-        
+        # load_dotenv()
+        # mistral_api_key = os.getenv('MISTRAL_API_KEY')
+        # self.ocr_client = Mistral(api_key=mistral_api_key) 
         print("✓ All models loaded successfully\n")
 
     def pdf_to_images(self, pdf_path):
@@ -352,40 +353,170 @@ class ObjectDetection:
 
     # ============ OCR DETECTION ============
     def detect_ocr(self, pdf_path, output_dir):
-        """Extract structured data from PDF using Mistral OCR"""
         output_dir = Path(output_dir)
         output_dir.mkdir(parents=True, exist_ok=True)
 
-        # Convert PDF to base64
-        with open(pdf_path, "rb") as file:
-            file_bytes = file.read()
-            encoded_bytes = base64.b64encode(file_bytes).decode("utf-8")
-
+        print(f"\n🔍 Starting OCR extraction for: {Path(pdf_path).name}")
         try:
-            annotations_response = self.ocr_client.ocr.process(
-                model="mistral-ocr-latest",
-                pages=list(range(8)),
-                document={
-                    "type": "document_url",
-                    "document_url": f"data:application/pdf;base64,{encoded_bytes}"
-                },
-                document_annotation_format=response_format_from_pydantic_model(Document),
-                include_image_base64=False
-            )
+            # Call the already integrated Mistral OCR process
+            ocr_result = self.process_pdf_with_mistral(pdf_path, output_dir)
 
-            extracted_data = json.loads(annotations_response.document_annotation)
-            
-            # Save extracted data
-            output_file = output_dir / f"{Path(pdf_path).stem}_ocr.json"
-            with open(output_file, "w", encoding="utf-8") as f:
-                json.dump(extracted_data, f, indent=2, ensure_ascii=False)
+            if ocr_result is None:
+                print("❌ OCR extraction failed.")
+                return {"status": "failed", "pdf": str(pdf_path), "output_dir": str(output_dir)}
 
-            print(f"  ✓ OCR extraction completed")
-            return {"data": extracted_data, "output_file": str(output_file)}
+            # Save a lightweight summary meta file for UI consumption
+            summary_meta = {
+                "pdf": str(pdf_path),
+                "output_dir": str(output_dir),
+                "status": "success",
+                "pages_processed": ocr_result.get("usage_info", {}).get("pages_processed", "unknown"),
+                "output_json": str(output_dir / f"{Path(pdf_path).stem}_ocr.json")
+            }
+
+            summary_path = output_dir / f"{Path(pdf_path).stem}_ocr_meta.json"
+            with open(summary_path, "w", encoding="utf-8") as f:
+                json.dump(summary_meta, f, indent=2, ensure_ascii=False)
+
+            print(f"  ✓ OCR extraction completed successfully for {Path(pdf_path).name}")
+            return summary_meta
 
         except Exception as e:
-            print(f"  ✗ OCR extraction failed: {str(e)}")
-            return {"error": str(e)}
+            print(f"❌ Error during OCR extraction: {e}")
+            return {"status": "error", "pdf": str(pdf_path), "error": str(e)}
+
+    
+    def encode_pdf_to_base64(self,pdf_path):
+        """Read a PDF file and encode it to base64"""
+        try:
+            with open(pdf_path, 'rb') as pdf_file:
+                pdf_content = pdf_file.read()
+                base64_encoded = base64.b64encode(pdf_content).decode('utf-8')
+                return base64_encoded
+        except FileNotFoundError:
+            print(f"❌ Error: PDF file not found at {pdf_path}")
+            return None
+        except Exception as e:
+            print(f"❌ Error reading PDF file: {e}")
+            return None
+
+    def process_pdf_with_mistral(self,pdf_path, output_path):
+        """Process a local PDF file using Mistral Document AI"""
+        
+        print("🔄 DEMO: PDF to Structured Data with Mistral Document AI")
+        print("=" * 60)
+        
+        load_dotenv()
+        # Get API key from environment
+        api_key = os.getenv('FOUNDRY_KEY')
+        
+    
+        if not api_key:
+            print("❌ Error: AZURE_API_KEY not found in environment variables")
+            return None
+        
+        # Show file info
+        file_size = os.path.getsize(pdf_path) / 1024  # KB
+        print(f"📄 Input File: {pdf_path}")
+        print(f"📊 File Size: {file_size:.1f} KB")
+        
+        # Encode PDF to base64
+        print(f"\n🔄 Step 1: Encoding PDF to base64...")
+        time.sleep(1)  # Demo pause
+        base64_content = self.encode_pdf_to_base64(pdf_path)
+        if not base64_content:
+            return None
+        
+        print(f"✅ Encoded {len(base64_content):,} characters")
+        
+        # API endpoint and headers
+        # azure_endpoint = os.getenv('AZURE_ENDPOINT')
+        azure_endpoint = os.getenv('OCR_FOUNDRY_ENDPOINT')
+        
+        
+        url = azure_endpoint
+        headers = {
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {api_key}"
+        }
+        
+        # Request payload
+        model_name = 'mistral-document-ai-2505'
+        payload = {
+            "model": model_name,
+            "document": {
+                "type": "document_url",
+                "document_url": f"data:application/pdf;base64,{base64_content}"
+            },
+            "include_image_base64": True
+        }
+        
+        try:
+            print(f"\n🚀 Step 2: Sending to Mistral Document AI...")
+            print(f"🔗 Endpoint: {url}")
+            time.sleep(1)  # Demo pause
+            
+            start_time = time.time()
+            response = requests.post(url, headers=headers, json=payload)
+            end_time = time.time()
+            
+            response.raise_for_status()
+            
+            result = response.json()
+            processing_time = end_time - start_time
+            
+            print(f"✅ Success! Processing completed in {processing_time:.2f} seconds")
+            print(f"📄 Pages processed: {result['usage_info']['pages_processed']}")
+            print(f"📊 Document size: {result['usage_info']['doc_size_bytes']:,} bytes")
+            
+            output_file = f"{output_path}/{Path(pdf_path).stem}_ocr.json"
+            with open(output_file, "w", encoding="utf-8") as f:
+                json.dump(result, f, indent=2, ensure_ascii=False)
+            
+            return result
+            
+        except requests.exceptions.RequestException as e:
+            print(f"❌ Error making API request: {e}")
+            if hasattr(e, 'response') and e.response is not None:
+                print(f"Response status code: {e.response.status_code}")
+                print(f"Response content: {e.response.text}")
+            return None
+
+    # def detect_ocr(self, pdf_path, output_dir):
+    #     """Extract structured data from PDF using Mistral OCR"""
+    #     output_dir = Path(output_dir)
+    #     output_dir.mkdir(parents=True, exist_ok=True)
+
+    #     # Convert PDF to base64
+    #     with open(pdf_path, "rb") as file:
+    #         file_bytes = file.read()
+    #         encoded_bytes = base64.b64encode(file_bytes).decode("utf-8")
+
+    #     try:
+    #         annotations_response = self.ocr_client.ocr.process(
+    #             model="mistral-ocr-latest",
+    #             pages=list(range(8)),
+    #             document={
+    #                 "type": "document_url",
+    #                 "document_url": f"data:application/pdf;base64,{encoded_bytes}"
+    #             },
+    #             document_annotation_format=response_format_from_pydantic_model(Document),
+    #             include_image_base64=False
+    #         )
+
+    #         extracted_data = json.loads(annotations_response.document_annotation)
+            
+    #         # Save extracted data
+    #         output_file = output_dir / f"{Path(pdf_path).stem}_ocr.json"
+    #         with open(output_file, "w", encoding="utf-8") as f:
+    #             json.dump(extracted_data, f, indent=2, ensure_ascii=False)
+
+    #         print(f"  ✓ OCR extraction completed")
+    #         return {"data": extracted_data, "output_file": str(output_file)}
+
+    #     except Exception as e:
+    #         print(f"  ✗ OCR extraction failed: {str(e)}")
+    #         return {"error": str(e)}
 
     # ============ PROCESS DIRECTORY ============
     def process_pdf_directory(self, main_dir, detection_type="all", score_thresh=0.7):
@@ -419,7 +550,11 @@ class ObjectDetection:
                 
                 if detection_type in ["ocr", "all"]:
                     output_dir = main_dir / "ocr_outputs"
+                    
+                    '''This is the old way to leverage OCR, we moved to foundry now'''
+                    # self.detect_ocr(str(pdf_file), str(output_dir)) 
                     self.detect_ocr(str(pdf_file), str(output_dir))
+                    
                 
                 print(f"  ✓ Completed\n")
                 

@@ -1,0 +1,387 @@
+{
+  "pdf": "data\\LAP_Sample on SEP28.pdf",
+  "pages": [
+    {
+      "page": 1,
+      "signatures": [
+        {
+          "id": 1,
+          "bbox": [
+            459,
+            259,
+            584,
+            408
+          ],
+          "confidence": 0.8676730990409851,
+          "crop": "data\\signature_outputs\\LAP_Sample on SEP28_page1_sig1.png"
+        },
+        {
+          "id": 2,
+          "bbox": [
+            460,
+            261,
+            511,
+            407
+          ],
+          "confidence": 0.7259336113929749,
+          "crop": "data\\signature_outputs\\LAP_Sample on SEP28_page1_sig2.png"
+        },
+        {
+          "id": 3,
+          "bbox": [
+            409,
+            601,
+            567,
+            784
+          ],
+          "confidence": 0.18773549795150757,
+          "crop": "data\\signature_outputs\\LAP_Sample on SEP28_page1_sig3.png"
+        },
+        {
+          "id": 4,
+          "bbox": [
+            409,
+            415,
+            570,
+            511
+          ],
+          "confidence": 0.15434829890727997,
+          "crop": "data\\signature_outputs\\LAP_Sample on SEP28_page1_sig4.png"
+        },
+        {
+          "id": 5,
+          "bbox": [
+            409,
+            412,
+            582,
+            650
+          ],
+          "confidence": 0.09705522656440735,
+          "crop": "data\\signature_outputs\\LAP_Sample on SEP28_page1_sig5.png"
+        },
+        {
+          "id": 6,
+          "bbox": [
+            191,
+            210,
+            512,
+            510
+          ],
+          "confidence": 0.07051364332437515,
+          "crop": "data\\signature_outputs\\LAP_Sample on SEP28_page1_sig6.png"
+        },
+        {
+          "id": 7,
+          "bbox": [
+            463,
+            8,
+            484,
+            25
+          ],
+          "confidence": 0.05294662341475487,
+          "crop": "data\\signature_outputs\\LAP_Sample on SEP28_page1_sig7.png"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "signatures": [
+        {
+          "id": 1,
+          "bbox": [
+            409,
+            624,
+            588,
+            782
+          ],
+          "confidence": 0.12677013874053955,
+          "crop": "data\\signature_outputs\\LAP_Sample on SEP28_page2_sig1.png"
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "signatures": [
+        {
+          "id": 1,
+          "bbox": [
+            409,
+            12,
+            572,
+            244
+          ],
+          "confidence": 0.13360796868801117,
+          "crop": "data\\signature_outputs\\LAP_Sample on SEP28_page3_sig1.png"
+        },
+        {
+          "id": 2,
+          "bbox": [
+            0,
+            415,
+            318,
+            733
+          ],
+          "confidence": 0.09707171469926834,
+          "crop": "data\\signature_outputs\\LAP_Sample on SEP28_page3_sig2.png"
+        },
+        {
+          "id": 3,
+          "bbox": [
+            409,
+            551,
+            571,
+            756
+          ],
+          "confidence": 0.06483960151672363,
+          "crop": "data\\signature_outputs\\LAP_Sample on SEP28_page3_sig3.png"
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "signatures": [
+        {
+          "id": 1,
+          "bbox": [
+            409,
+            246,
+            554,
+            510
+          ],
+          "confidence": 0.30741652846336365,
+          "crop": "data\\signature_outputs\\LAP_Sample on SEP28_page4_sig1.png"
+        },
+        {
+          "id": 2,
+          "bbox": [
+            2,
+            4,
+            318,
+            326
+          ],
+          "confidence": 0.2145860493183136,
+          "crop": "data\\signature_outputs\\LAP_Sample on SEP28_page4_sig2.png"
+        },
+        {
+          "id": 3,
+          "bbox": [
+            193,
+            196,
+            511,
+            510
+          ],
+          "confidence": 0.08043089509010315,
+          "crop": "data\\signature_outputs\\LAP_Sample on SEP28_page4_sig3.png"
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "signatures": [
+        {
+          "id": 1,
+          "bbox": [
+            449,
+            305,
+            566,
+            443
+          ],
+          "confidence": 0.9213159084320068,
+          "crop": "data\\signature_outputs\\LAP_Sample on SEP28_page5_sig1.png"
+        },
+        {
+          "id": 2,
+          "bbox": [
+            28,
+            400,
+            80,
+            442
+          ],
+          "confidence": 0.16595646739006042,
+          "crop": "data\\signature_outputs\\LAP_Sample on SEP28_page5_sig2.png"
+        },
+        {
+          "id": 3,
+          "bbox": [
+            415,
+            675,
+            431,
+            695
+          ],
+          "confidence": 0.10079360008239746,
+          "crop": "data\\signature_outputs\\LAP_Sample on SEP28_page5_sig3.png"
+        },
+        {
+          "id": 4,
+          "bbox": [
+            409,
+            446,
+            566,
+            511
+          ],
+          "confidence": 0.08746447414159775,
+          "crop": "data\\signature_outputs\\LAP_Sample on SEP28_page5_sig4.png"
+        },
+        {
+          "id": 5,
+          "bbox": [
+            432,
+            681,
+            488,
+            730
+          ],
+          "confidence": 0.07522202283143997,
+          "crop": "data\\signature_outputs\\LAP_Sample on SEP28_page5_sig5.png"
+        },
+        {
+          "id": 6,
+          "bbox": [
+            410,
+            460,
+            572,
+            696
+          ],
+          "confidence": 0.0740402564406395,
+          "crop": "data\\signature_outputs\\LAP_Sample on SEP28_page5_sig6.png"
+        },
+        {
+          "id": 7,
+          "bbox": [
+            409,
+            591,
+            563,
+            775
+          ],
+          "confidence": 0.06055525317788124,
+          "crop": "data\\signature_outputs\\LAP_Sample on SEP28_page5_sig7.png"
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "signatures": [
+        {
+          "id": 1,
+          "bbox": [
+            242,
+            607,
+            264,
+            625
+          ],
+          "confidence": 0.3393780589103699,
+          "crop": "data\\signature_outputs\\LAP_Sample on SEP28_page6_sig1.png"
+        },
+        {
+          "id": 2,
+          "bbox": [
+            193,
+            538,
+            509,
+            776
+          ],
+          "confidence": 0.18792715668678284,
+          "crop": "data\\signature_outputs\\LAP_Sample on SEP28_page6_sig2.png"
+        },
+        {
+          "id": 3,
+          "bbox": [
+            262,
+            553,
+            383,
+            754
+          ],
+          "confidence": 0.146470844745636,
+          "crop": "data\\signature_outputs\\LAP_Sample on SEP28_page6_sig3.png"
+        },
+        {
+          "id": 4,
+          "bbox": [
+            274,
+            744,
+            302,
+            759
+          ],
+          "confidence": 0.12286550551652908,
+          "crop": "data\\signature_outputs\\LAP_Sample on SEP28_page6_sig4.png"
+        },
+        {
+          "id": 5,
+          "bbox": [
+            205,
+            553,
+            252,
+            629
+          ],
+          "confidence": 0.11214148253202438,
+          "crop": "data\\signature_outputs\\LAP_Sample on SEP28_page6_sig5.png"
+        },
+        {
+          "id": 6,
+          "bbox": [
+            1,
+            0,
+            318,
+            317
+          ],
+          "confidence": 0.10964450240135193,
+          "crop": "data\\signature_outputs\\LAP_Sample on SEP28_page6_sig6.png"
+        },
+        {
+          "id": 7,
+          "bbox": [
+            20,
+            543,
+            353,
+            776
+          ],
+          "confidence": 0.10502903163433075,
+          "crop": "data\\signature_outputs\\LAP_Sample on SEP28_page6_sig7.png"
+        },
+        {
+          "id": 8,
+          "bbox": [
+            33,
+            546,
+            184,
+            681
+          ],
+          "confidence": 0.08724026381969452,
+          "crop": "data\\signature_outputs\\LAP_Sample on SEP28_page6_sig8.png"
+        },
+        {
+          "id": 9,
+          "bbox": [
+            143,
+            663,
+            160,
+            680
+          ],
+          "confidence": 0.08359158039093018,
+          "crop": "data\\signature_outputs\\LAP_Sample on SEP28_page6_sig9.png"
+        },
+        {
+          "id": 10,
+          "bbox": [
+            415,
+            583,
+            549,
+            602
+          ],
+          "confidence": 0.07887446135282516,
+          "crop": "data\\signature_outputs\\LAP_Sample on SEP28_page6_sig10.png"
+        },
+        {
+          "id": 11,
+          "bbox": [
+            409,
+            291,
+            578,
+            508
+          ],
+          "confidence": 0.07518898695707321,
+          "crop": "data\\signature_outputs\\LAP_Sample on SEP28_page6_sig11.png"
+        }
+      ]
+    }
+  ]
+}

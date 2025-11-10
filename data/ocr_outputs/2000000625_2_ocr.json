@@ -1,0 +1,22 @@
+{
+  "pages": [
+    {
+      "index": 0,
+      "images": [],
+      "markdown": "# CHECKMATE INDUSTRIAL GUARDS (P) LTD.\n\n**HMEL TOWNSHIP REFINARY ROAD, RAMAN MANDI, BHATINDA-1204354885, State Code: 03** **Telephone: 151001, Fax No: 0120-4354887, Email: PUNJAB@CHECKMATEGUARDS.COM**\n\n## Tax Invoice\n\n|  **To** | **Invoice No.:** | **PB/03/20-21/22**  |\n| --- | --- | --- |\n|  **HPCL MITTAL ENERGY LTD.** |  |   |\n|  **VILLAGE PHILLOKHARI, TALUKA TALWANDI** |  |   |\n|  **SABO, BATHINDA, PUNJAB** |  |   |\n|  **STATE CODE & NAME:** 03, BATHINDA, PUNJAB |  |   |\n|  **GSTIN No:** 03AABCG5231F1Z8 |  |   |\n|  **Unit Code:** 874 |  |   |\n\n**Invoice for the Month of May 2020**\n\n|  **PARTICULARS** | **SAC-HSN Code** | **PERSON/QTY.** | **DUTIES** | **RATE** | **AMOUNT**  |\n| --- | --- | --- | --- | --- | --- |\n|  1. EVEREST G.H. | 998529 |  |  |  | 12506.00  |\n\n|  **Total** | **REC** | **11 JU** | **20**  |\n| --- | --- | --- | --- |\n|  |   |   |   |\n\n**Invoice Department:** 1. Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity, Electricity,",
+      "dimensions": {
+        "dpi": 200,
+        "height": 2200,
+        "width": 1700
+      }
+    }
+  ],
+  "model": "mistral-document-ai-2505",
+  "document_annotation": null,
+  "usage_info": {
+    "pages_processed": 1,
+    "doc_size_bytes": 952828,
+    "pages_processed_annotation": 0
+  },
+  "content_filter_results": null
+}
