@@ -11,4 +11,4 @@
 topic_config.json
 temp_*/
 __pycache__/
-index_store/
+index_store/".env" 
