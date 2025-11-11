@@ -7,7 +7,7 @@ pyMuPDF
 pillow
 ultralytics
 supervision
-opencv-python
+opencv-python-headless
 scikit-learn
 mistralai 
 pydantic 
