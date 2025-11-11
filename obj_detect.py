@@ -7,21 +7,15 @@ from PIL import Image, ImageDraw
 import requests
 import torch
 import cv2
-import supervision as sv
 from dotenv import load_dotenv
 import os
+import fitz
 
 from transformers import AutoImageProcessor, DetrForObjectDetection
 from ultralytics import YOLO
 # from mistralai import Mistral
 # from mistralai.extra import response_format_from_pydantic_model
-from pydantic import BaseModel, Field
-
-try:
-    import fitz  # PyMuPDF for PDF handling
-except ImportError:
-    raise RuntimeError("PyMuPDF not installed. Run: pip install pymupdf")
-
+# from pydantic import BaseModel, Field
 
 # Pydantic model for OCR extraction
 # class Document(BaseModel):

@@ -5,6 +5,7 @@ import json
 import shutil
 import zipfile
 from pathlib import Path
+from PIL import Image
 
 # Import module classes
 from obj_detect import ObjectDetection
@@ -14,12 +15,17 @@ from doc_sum_pipeline import Doc_Summarizer
 # =========================
 # Streamlit Config
 # =========================
-# =========================
-# Custom Page Styling
-# =========================
+# BASE_DIR = Path(__file__).resolve().parent
+
+# logo_icon= Image.open(BASE_DIR / "assets" / "MLAI_Digital_Logo.jpg")
+
+BASE_DIR = Path(os.getcwd())  # Get the current working directory
+logo_path = os.path.join(BASE_DIR, "assets", "MLAI_Digital_Logo.jpg")
+logo_icon = Image.open(logo_path)
+
 st.set_page_config(
     page_title="Document CoPilot System",
-    page_icon="assets/MLAI Digital Logo (1).jpg",
+    page_icon=logo_icon,
     layout="wide"
 )
 
@@ -132,7 +138,7 @@ st.set_page_config(
 # =========================
 # Sidebar Navigation
 # =========================
-st.sidebar.image("assets\MLAI Digital Logo (1).jpg", use_container_width=True)
+st.sidebar.image(BASE_DIR / "assets" / "MLAI_Digital_Logo.jpg", use_container_width=True)
 
 st.sidebar.info("Use this unified platform to perform all document analysis tasks seamlessly.")
 
